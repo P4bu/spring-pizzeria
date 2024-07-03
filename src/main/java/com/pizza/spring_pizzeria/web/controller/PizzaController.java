@@ -31,6 +31,7 @@ public class PizzaController {
         return ResponseEntity.ok(this.pizzaService.get(idPizza));
     }
 
+
     @GetMapping("/available")
     public ResponseEntity <Page<PizzaEntity>> getAvailable(@RequestParam(defaultValue = "0") int page,
                                                            @RequestParam(defaultValue = "8") int elements,
