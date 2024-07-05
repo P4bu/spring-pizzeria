@@ -17,4 +17,13 @@ public class AuditableEntity {
     @Column(name = "modified_date")
     @LastModifiedDate
     private LocalDateTime modifiedDate;
+
+    @Column(name = "created_by")
+    @CreatedDate
+    private String createBy;
+
+    @Column(name = "modified_by")
+    @LastModifiedDate
+    private String modfiedBy;
+
 }
